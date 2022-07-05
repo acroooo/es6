@@ -9,3 +9,8 @@ if (numbers.includes(7)) {
     console.log('El valor no se encuentra en el arreglo');
 }
 
+// potenciacion
+let base = 4;
+let exponent = 3;
+let result = base ** exponent;
+console.log(result);
