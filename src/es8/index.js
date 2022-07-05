@@ -58,3 +58,24 @@ const data3 = {
 
 const properties = Object.keys(data3)
 console.log(properties)
+
+
+// rellenar un string o padding 
+// string.padStart(longitud, caracter)
+// string.padEnd(longitud, caracter)
+// rellenar por el principio o fin, con un caracter especificado, repetido
+// hasta que complete la longitud máxima.
+
+const string = 'hello'
+console.log(string.padStart(7, 'hi'))
+
+
+// trailing commas
+// comas al final de objetos o arrays que faciliten añadir
+// nuevos elementos y evitar errores de sintaxis
+
+const nombres = [
+    "Andres",
+    "Valeria",
+    "Jhesly", //<-- Trailing comma
+ ]
