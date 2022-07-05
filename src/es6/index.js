@@ -147,3 +147,28 @@ helloPromise().then((response) => {
     console.log(error);
 }
 )
+
+//================================================================
+
+// Clases, módulos y generadores
+
+class Calculator{
+    // constructor
+    constructor(){
+        // atributos
+        this.valueA = 0;
+        this.valueB = 0;
+    }
+
+    // métodos
+    sum(valueA, valueB) {
+        // this.valueA es igual al valor que se recibe
+        this.valueA = valueA;
+        this.valueB = valueB;
+        return this.valueA + this.valueB;
+    }
+}
+
+const calculator = new Calculator();
+
+console.log(calculator.sum(2, 2));
