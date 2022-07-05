@@ -39,3 +39,17 @@ helloWorld().finally(() => {
 // Expresiones regulares - Regex
 // patrones de búsqueda y manipulación de cadenas de caracteres
 // se crea el patrón entre barras inclinadas (/patrón/)
+
+// manejo fechas AAAA-MM-DD
+// números del 0 al 9, son 4 valores => año
+// números del 0 al 9, son 2 valores => mes y día
+const regexData = /([0-9]{4})-([0-9]{2})-([0-9]{2})/;
+
+// averiguar si estan los datos establecidos sobre este regex
+const match = regexData.exec('2018-01-01');
+
+// acceder a los datos mes, año, dia
+const year = match[1];
+const month = match[2];
+const day = match[3];
+
