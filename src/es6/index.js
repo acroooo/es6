@@ -172,3 +172,11 @@ class Calculator{
 const calculator = new Calculator();
 
 console.log(calculator.sum(2, 2));
+
+//================================================================
+
+// import y export - modulos
+
+import { hello } from './module';
+
+hello()
