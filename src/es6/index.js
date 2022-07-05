@@ -180,3 +180,20 @@ console.log(calculator.sum(2, 2));
 import { hello } from './module';
 
 hello()
+
+//=================================================================
+
+// Generadores
+
+function* helloWorld() {
+    if (true) {
+        // yield guarda el estado de forma interna
+        yield 'Hello, ';
+    }
+    if (true) {
+        yield 'World';
+    }
+}
+
+const generatorHello = helloWorld()
+console.log(generatorHello.next().value);
