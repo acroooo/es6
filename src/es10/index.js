@@ -22,3 +22,34 @@ let array2 = [1, 2, 3, 4, 5, [1, 2, 3]]
 
 // retorna el valor y el valor por 2
 console.log(array2.flatMap(value => [value, value * 2]))
+
+// Eliminar espacios en blanco
+// trim, trimStart / trimLeft, trimEnd / trimRight
+
+let hello = '                             hello world'
+console.log(hello.trim())
+
+// optional catch binding
+// permite omitir el error si es necesario, para que este obligatorio
+
+try {
+
+} catch {
+    error
+}
+
+
+// Object.fromEntries()
+// devuelve un objeto a partir de un array donde sus elementos son las
+// entries en forma [propiedad, valor]
+// operacion inversa a Object.entries()
+
+let entries = [["name", "Hernan"], ["age", "30"]]
+console.log(Object.fromEntries(entries))
+
+// Propiedad description de los tipos symbol
+// acceder a su descripcion
+
+let mySymbl = 'my simbol'
+let symbol = Symbol(mySymbl)
+console.log(symbol.description)
