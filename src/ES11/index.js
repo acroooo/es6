@@ -36,3 +36,27 @@ Promise.allSettled([promise1, promise2, promise3]).then((response) => {
 }
 )
 
+// Global.this
+// Objeto global para cualquier plataforma
+
+// proporciona funciones y variables propias e integradas en el lenguaje
+// o el entorno
+// para estandarizar el objeto global se creó globalThis, un objeto
+// compatible con cualquier plataforma
+
+console.log(window) // error
+console.log(globalThis) // objeto
+
+// nullish coalescing
+// operador ??
+// consiste en evaluar una variable si es undefined o null para asignarle
+// un valor
+const foo = null ?? 'default string'; 
+// OR evalue un valor falsy
+
+
+// optional chaining
+// acceder a propiedades de un objeto que no existen
+// operador ?
+const user = {}
+console.log(user?.profile?.email) // undefined
